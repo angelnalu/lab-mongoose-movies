@@ -1,2 +1,24 @@
 <h1>Celebrities</h1>
-<p>Welcome to Celebrities</p>
+
+<button class="btn-index btn-light"> <a href="/celebrity/new" class="font-weight-bold">Add Celebrities</a>
+</button>
+
+{{#each celebrities}}
+    <p>{{this.name}}</p>
+    <p><a href="celebrities/{{this._id}}"> Details </a></p>
+
+    <button>
+        <a href="/celebrities/{{this._id}}/delete"> Delete </a>
+    </button>
+
+    <button class="btn-index btn-light">
+        <a href="/" class="font-weight-bold"> return </a>
+    </button>
+
+    <button>
+    <a href="/celebrities/{{this._id }}/edit"> Edit </a>
+    </button>
+
+{{/each}}
+
+

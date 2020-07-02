@@ -1,0 +1,14 @@
+<h2>ARE YOU SURE YOU WANT TO DELETE THIS CELEBRITY?</h2>
+
+<p>Name: {{details.name}}</p>
+<p>Occupation: {{details.occupation}}</p>
+<p>catchPhrase: {{details.catchPhrase}}</p>
+
+<form action="/celebrities/{{details._id}}/delete" method="POST">
+  <input type="hidden" name="id" value="{{details._id}}">
+<button type="submit">Yes, delete!</button>
+
+</form>
+
+<button><a href="/celebrities">Nope, cancel!</a></button>
+

@@ -3,16 +3,10 @@ const Schema   = mongoose.Schema;
 
 const celebritySchema = new Schema({
   name: String,
-  ocupation: String,
+  occupation: String,
   catchPhrase: String,
 });
 
 const Celebrity = mongoose.model("Celebrity", celebritySchema);
 
 module.exports = Celebrity;
-
-
-
-
-
-

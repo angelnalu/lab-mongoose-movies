@@ -1,0 +1,19 @@
+<h2>EDIT CELEBRITY</h2>
+
+<form action="/celebrities/:id/edit" method="POST">
+    <label for="name"><strong>Name</strong></label>
+    <input type="text" value="{{details.name}}" name="name" required>
+
+    <label for="occupation"><strong>Occupation</strong></label>
+    <input type="text" value="{{details.occupation}}" name="occupation" required>
+
+    <label for="catchphrase"><strong>Catch Phrase</strong></label>
+    <input type="text" value="{{details.catchPhrase}}" name="catchPhrase" required>
+
+    <input type="hidden" value="{{details._id}}" name="id" required>
+
+  <button type="submit"><strong>Insert</strong></button>
+</form>
+
+<button class="btn-index btn-light"> <a href="/celebrities" class="font-weight-bold">return</a>
+</button>
